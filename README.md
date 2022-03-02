@@ -17,3 +17,27 @@
    6-1. (cd frontend )nmp i react-router-dom
    6-2. create route for home screen
    6-3. create router for product scree
+7. Create Node.JS Server
+   7-1. (cd backend)run npm init in root folder
+   7-2. update package.json set type: module
+   (we use import instead of require for import packages)
+   7-3. add .js to imports
+   7-4. npm install express
+   (in 7-1 terminal:cd backend -> check package.json dependencies)
+   7-5. create server.js
+   7.6. add start command as node backend/server.js
+   7-7. require express
+   7-8. create route for / return backend is ready
+   7-9. move products.js from frontend to backend
+   7-10. create route for /api/products
+   7-11. return products
+   (cd backend => node server.js)
+   (http://localhost:5000/api/products => return products )
+   (stop it => control + c => rerun => node server.js )
+   (cd backend => npm install nodemon --save-dev => once there is any change in backend code,update server when I have change in backend code)
+   (--save-dev just for development,if we are done with development,we are not use nodemon => package.json => devDependencies)
+   ( package.json =>
+   "scripts": {
+   "start": "nodemon server.js",
+   })
+   7-12. run npm start
