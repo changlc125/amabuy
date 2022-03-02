@@ -19,3 +19,30 @@ header a {
   /* no underline */
   text-decoration: none;
 }
+
+main {
+  padding: 1rem;
+}
+
+.products {
+  /* put elements next to each other */
+  display: flex;
+  /* if there is no space in a row, new iterms will be pushed down to new line*/
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px #404040 solid;
+  /* create a space  */
+  margin: 1rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.product-info {
+  padding: 1rem;
+}
