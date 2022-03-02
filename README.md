@@ -41,3 +41,14 @@
    "start": "nodemon server.js",
    })
    7-12. run npm start
+8. Fetch Products from backend
+   8-1. set proxy(代理,not directly connected) in package.json
+   (package.json in frontend => add "proxy": "http://localhost:5000",)
+   (frontend terminal: cd frontend => npm start )
+   (backend terminal: cd backend =npm start)
+   8.2. npm install axios
+   (https://axios-http.com/docs/intro )
+   (new frontend terminal: cd frontend => npm install axios ))
+   8-3. use state hook
+   8-4. use effect hook
+   8-5. use reducer hook
