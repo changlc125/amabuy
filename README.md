@@ -72,3 +72,10 @@
     10-1. cd frontend => npm install react-bootstrap bootstrap@5.1.3  
     (https://react-bootstrap.github.io/getting-started/introduction)  
     10-2. update App.js
+    (push footer down to the bottom of a page,we need to add the flex style to the parent component)
+    (npm install react-router-bootstrap for LinkContainer)
+
+11. Create Product and Rating Component
+    11-1. create Rating component
+    11-2. create Product component
+    11-3. use Rating component in Product component

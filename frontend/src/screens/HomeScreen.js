@@ -1,9 +1,11 @@
 import { useState, useEffect, useReducer } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 //import data from '../data';// from front end,static data
 // use reducer to record all changes in the state of UI
 import logger from 'use-reducer-logger';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Product from '../components/Product';
 
 //define reducer function
 //it accepts two parameters(currState,action that changes currState or create a new state)
@@ -72,24 +74,14 @@ function HomeScreen() {
         ) : error ? (
           <div>{error}</div> //otherviews if error is true
         ) : (
-          products.map((product) => (
-            <div className="product" key={product.slug}>
-              {/* link :no page refresh ,to= href*/}
-              <Link to={`/product/${product.slug}`}>
-                <img src={product.image} alt={product.name} />
-              </Link>
-
-              <div className="product-info">
-                <Link to={`/product/${product.slug}`}>
-                  <p>{product.name}</p>
-                </Link>
-                <p>
-                  <strong>${product.price}</strong>
-                </p>
-                <button>Add to cart</button>
-              </div>
-            </div>
-          ))
+          <Row>
+            {products.map((product) => (
+              //for a small screen ,we have two elemnts next to each other(total 12)
+              <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
+                <Product product={product}></Product>
+              </Col>
+            ))}
+          </Row>
         )}
       </div>
     </div>
