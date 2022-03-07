@@ -7,21 +7,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
+/* header {
   background-color: #404040;
   padding: 1rem;
-}
+} */
 
 /* a link inside header */
-header a {
+/* header a {
   color: #ffffff;
   font-weight: bold;
   /* no underline */
-  text-decoration: none;
+/* text-decoration: none; */
+/* } */
+
+/* Push footer down to the bottom of a page*,stick to bottom */
+.site-container {
+  min-height: 100vh;
 }
 
 main {
-  padding: 1rem;
+  /* padding: 1rem; */
+  flex: 1;
 }
 
 .products {

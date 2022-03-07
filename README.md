@@ -67,3 +67,8 @@
    9-2. update fetch data  
    9-3. get state from useReducer  
    (cd frontend => npm install use-reducer-logger --force )
+
+10. Add bootstrap UI framework  
+    10-1. cd frontend => npm install react-bootstrap bootstrap@5.1.3  
+    (https://react-bootstrap.github.io/getting-started/introduction)  
+    10-2. update App.js
