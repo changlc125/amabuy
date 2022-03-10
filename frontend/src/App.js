@@ -23,7 +23,8 @@ function App() {
           <Link to="/">amabuy</Link> */}
         </header>
         <main>
-          <Container>
+          {/* margin top = 3rem */}
+          <Container className="mt-3">
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/" element={<HomeScreen />} />

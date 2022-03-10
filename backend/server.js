@@ -13,6 +13,17 @@ app.get('/api/products', (req, res) => {
   res.send(data.products);
 });
 
+// return prodcut infomation based on the slug of the product
+app.get('/api/products/slug/:slug', (req, res) => {
+  const product = data.products.find((x) => x.slug === req.params.slug);
+  //if product exists
+  if (product) {
+    res.send(product);
+  } else {
+    res.status(404).send({ message: 'Product Not Found' });
+  }
+});
+
 //define a port that we are gonna to respond for backend
 //set the environment variable PORT to tell your web server what port to listen on.
 //whatever is in the environment variable PORT, or 5000 if there's nothing there.(default port to 5000 if you dont set it)

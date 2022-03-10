@@ -6,6 +6,7 @@ import logger from 'use-reducer-logger';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Product from '../components/Product';
+import { Helmet } from 'react-helmet-async';
 
 //define reducer function
 //it accepts two parameters(currState,action that changes currState or create a new state)
@@ -67,6 +68,9 @@ function HomeScreen() {
   return (
     //those data(products from back end )
     <div>
+      <Helmet>
+        <title>amabuy</title>
+      </Helmet>
       <h1>Featured products</h1>
       <div className="products">
         {loading ? (

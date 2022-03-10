@@ -75,7 +75,12 @@
     (push footer down to the bottom of a page,we need to add the flex style to the parent component)
     (npm install react-router-bootstrap for LinkContainer)
 
-11. Create Product and Rating Component
-    11-1. create Rating component
-    11-2. create Product component
+11. Create Product and Rating Component  
+    11-1. create Rating component  
+    11-2. create Product component  
     11-3. use Rating component in Product component
+
+12. Create Product Details Screen
+    12-1. fetch Product from backend
+    12-2. create 3 columns for images,info and action
+    cd frontend => npm install react-helmet-async
