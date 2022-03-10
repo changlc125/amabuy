@@ -80,7 +80,7 @@
     11-2. create Product component  
     11-3. use Rating component in Product component
 
-12. Create Product Details Screen
-    12-1. fetch Product from backend
-    12-2. create 3 columns for images,info and action
+12. Create Product Details Screen  
+    12-1. fetch Product from backend  
+    12-2. create 3 columns for images,info and action  
     cd frontend => npm install react-helmet-async
